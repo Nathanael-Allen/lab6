@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html data-userprofile-context="{&quot;hasProfileCardAccess&quot;:true}" data-mathjax-context="{&quot;renderLatex&quot;:false,&quot;outputScale&quot;:1.0,&quot;enableMML3Support&quot;:false}" data-logging-endpoint="/d2l/lp/logger/provision?sessionToken=NjYwNSw0MTE0Njc" lang="en-us" data-lang-default="en-us" data-intl-overrides="{&quot;number&quot;:{&quot;patterns&quot;:{&quot;decimal&quot;:{&quot;negativePattern&quot;:&quot;-{number}&quot;},&quot;percent&quot;:{&quot;positivePattern&quot;:&quot;{number} %&quot;,&quot;negativePattern&quot;:&quot;-{number} %&quot;}},&quot;symbols&quot;:{&quot;decimal&quot;:&quot;.&quot;,&quot;group&quot;:&quot;,&quot;,&quot;negative&quot;:&quot;-&quot;,&quot;percent&quot;:&quot;%&quot;},&quot;groupSize&quot;:[0]},&quot;date&quot;:{&quot;hour24&quot;:false,&quot;calendar&quot;:{&quot;firstDayOfWeek&quot;:0,&quot;dayPeriods&quot;:{&quot;am&quot;:&quot;AM&quot;,&quot;pm&quot;:&quot;PM&quot;},&quot;months&quot;:{&quot;short&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;,&quot;&quot;],&quot;long&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;,&quot;&quot;]},&quot;days&quot;:{&quot;short&quot;:[&quot;Sun&quot;,&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thu&quot;,&quot;Fri&quot;,&quot;Sat&quot;]}},&quot;formats&quot;:{&quot;dateFormats&quot;:{&quot;short&quot;:&quot;M/d/yyyy&quot;},&quot;timeFormats&quot;:{&quot;short&quot;:&quot;h:mm tt&quot;,&quot;medium&quot;:&quot;h:mm tt&quot;,&quot;full&quot;:&quot;h:mm tt ZZZ&quot;}}}}" data-oslo="{&quot;batch&quot;:&quot;/d2l/api/oslo/1/batch&quot;,&quot;collection&quot;:&quot;/d2l/api/oslo/1/collection&quot;,&quot;version&quot;:&quot;W/\&quot;20.24.6.19120.5805067881\&quot;&quot;}" data-timezone="{&quot;name&quot;:&quot;Canada - Vancouver&quot;,&quot;identifier&quot;:&quot;America/Vancouver&quot;}" data-app-version="20.24.6" dir="ltr" data-telemetry-endpoint="https://prd.us-east-1.telemetryservice.brightspace.com/api/events/" data-cdn="https://s.brightspace.com/apps/brightspace/20.24.6.19120/" data-global-context="{&quot;orgUnitId&quot;:&quot;532440&quot;}" data-he-context="{&quot;activeOrgEnrollment&quot;:true,&quot;activityFrameworkEnabled&quot;:false,&quot;allowInvalidElements&quot;:false,&quot;bcsansFontAllowed&quot;:false,&quot;contentStyler&quot;:false,&quot;contentStylerCssOverride&quot;:&quot;&quot;,&quot;generativeAIEndpoint&quot;:&quot;&quot;,&quot;insertElement&quot;:true,&quot;insertPractice&quot;:true,&quot;layouts&quot;:true,&quot;mathEnableMML3Support&quot;:false,&quot;mathRenderScale&quot;:1.0,&quot;maxFileSize&quot;:2147483648,&quot;mentions&quot;:true,&quot;orgUnitId&quot;:&quot;532440&quot;,&quot;orgUnitPath&quot;:&quot;/content/enforced/532440-31539.202403.CIS133Y/&quot;,&quot;pasteFormatting&quot;:&quot;merge&quot;,&quot;sourceEditable&quot;:true,&quot;uploadFiles&quot;:false,&quot;useNewTinyMCEVersion&quot;:true,&quot;viewFiles&quot;:false,&quot;wmodeOpaque&quot;:false}" data-css-vars="{&quot;--d2l-branding-primary-color&quot;:&quot;#008099&quot;}">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lab 6 Assignment Instructions - CIS-133Y-31539 - Python Programming I</title>
+		<link rel="preconnect" href="https://s.brightspace.com/lib/bsi/2024.6.211/" crossorigin>
+		<link rel="dns-prefetch" href="https://s.brightspace.com/lib/bsi/2024.6.211/">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/bsi-unbundled.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/d2l-navigation.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/d2l-navigation-main-header.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/d2l-navigation-button-icon.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/d2l-navigation-link-icon.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/d2l-navigation-separator.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/d2l-navigation-link-image.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/d2l-navigation-dropdown-button-icon.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/dropdown-content.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/d2l-navigation-dropdown-button-custom.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/d2l-profile-image-base.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/d2l-navigation-main-footer.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/dropdown.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/dropdown-menu.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/icon.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/menu.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/menu-item-link.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/menu-item.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/d2l-navigation-band.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/button-icon.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/menu-item-separator.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/loading-spinner.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/breadcrumbs.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/breadcrumb.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/breadcrumb-current-page.js" as="script" crossorigin="anonymous">
+		<link rel="modulepreload" href="https://s.brightspace.com/lib/bsi/2024.6.211/unbundled/dropdown-context-menu.js" as="script" crossorigin="anonymous">
+		<script>
+		(function(){if('PerformanceLongTaskTiming' in window) {var g = window.__tti = {e:[]};g.o = new PerformanceObserver( function( l ){ g.e = g.e.concat( l.getEntries() ) });g.o.observe({ entryTypes:['longtask']})}})();
+		(function(){var client;var errors = [];window.addEventListener('d2l-logging-loaded', function(e) {client = e.detail.createClient('uncaught-errors', { shouldThrottle: true });if (errors.length > 0) {client.legacyErrorBatch(errors);}});var handleError = function(data) {if (client) {client.legacyError(data.message, data.source, data.lineno, data.colno, data.error);} else {errors.push(data);}};window.addEventListener('error', function(e) {handleError({ message: e.message, source: e.source, lineno: e.lineno, colno: e.colno, error: e.error });});window.addEventListener('unhandledrejection', function(e) {handleError({message: e.reason ? (e.reason.message ? e.reason.message : e.reason) : '',error: e.reason});});})();
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KQPCNTLF');
+		(function(){try { localStorage.setItem('XSRF.Token','aq47VRUP5wkvwCAdwFWhXYFzWMD8jzRr');localStorage.setItem('Session.UserId','411467');} catch(e) {}})();
+		(function(){if(window['FontFace'] === undefined) { window.d2lFontsLoaded = true; return; }window.d2lFontsLoaded = false;Promise.all(['400','700'].map(function(w) {return new FontFace('Lato','url(https://s.brightspace.com/lib/fonts/0.6.1/assets/Lato-' + w + '.woff2) format("woff2")', {style:'normal',weight: w}).load();})).then(function() {window.d2lFontsLoaded = true;if(window['D2L'] && window.D2L['FontsLoaded']) { window.D2L.FontsLoaded(); }});})();
+		(function(){
+				D2L = window.D2L || {}; D2L.LP = D2L.LP || {}; D2L.LP.Web = D2L.LP.Web || {}; D2L.LP.Web.UI = D2L.LP.Web.UI || {};
+				D2L.LP.Web.UI.Flags = {
+					ListedFlags: {"publish-retract-workflow-enhancements":true,"de44716-lti-iframe-resize-limit":false,"f19769-revamp-submission-page":true,"shield-7574-enable-embed-rendering-framework":true,"f17596-student-controlled-clock-visibility":true,"ipsis-provider-oldstandardcsv":false,"F18735-lti-special-access-ui-feature-flag":false,"F21836-outcomes-achievement-threshold":false,"ipsis-oneroster-csv-powerschool":false,"f17182-autosubmit-quiz-org-level":true,"F22081-hwep-eol-in-app-messaging":true,"F19163-enable-content-face-standards":true,"F18117-face-discussions-m2":true,"new-annotations-viewer":true,"IDCS-17-edit-weblink-descriptions":false,"F16988-add-to-calendar":true,"F19053-outcomes-oslo-MV":true,"DE54981-label-bonus-questions-in-quiz-attempt":true,"f18513-or-support-unenrollment-by-end-date":true,"F19935-more-paging-options":true,"f21868-display-email":true,"F18126-rubric-print":true,"us132260-lti-component-postmessage-storage-limit":true,"rubrics-popout-activity-details":true,"f17778-oneroster-psur":false,"rubrics-archive":true,"ipsis-hide-downloadlink-and-rerun":true,"F22133-user-progress-d2l-list":true,"GAUD-688-mvc-inline-dialogs":true,"ipsis-sourcesystem-migration":true,"IDCS-283-edit-lti-descriptions":false,"de51796-lti-component-log-spam":true,"consistent-evaluation-isf-database-files":true,"fed-54-in-progress":false,"F22279-CSV-Import-Of-Outcomes":true,"consistent-evaluation-working-copy":true,"f21938-display-user-profile-picture":true,"F21912-enable-content-face-competencies":true,"IDCS-15-edit-content-file-descriptions":false,"ipsis-oneroster-full-sync-implicit-unenrollments":false,"oad-drill-down":false,"de54286-oneroster-grades-nightly-export-filter":true,"ipsis-esb-lis":false,"US157380-iframe-resizing":true,"MAV-2007-elements-in-creator":false,"F19162-enable-content-face-releaseconditions":true,"activity-alignments-list-clear-all-confirmation":true,"F18085_Zip_Name_Display":true,"F21956-toggle-forum":true,"I4767-Course-Create-Widget-GA":true,"return-points":true,"F18308-manually-enter-negative-scores":true,"rubrics-close-pop-out-when-changes-saved-DE50529":true,"FED-3067-Annual-Consumption":false,"hyrl-65-or-upper-orgunit-enrollments":false,"f22019-display-email-in-user-profile-page":true,"f19471-gg4l-oneroster-grades-passback":false,"f20000-download-baked-badge":true,"GAUD-6067-mvc-inline-dialog-factory-cleanup":true,"f19691-search-by-email":true,"d2l-collapsible-panel-rubrics":true,"f17183-synchronous-quizzes-org-level":true,"rubrics-edit-assessed":true,"rubrics-working-copy":true},
+					Flag: function(feature, defaultValue) {
+						const featureValue = D2L.LP.Web.UI.Flags.ListedFlags[feature];
+						return featureValue !== undefined ? featureValue : defaultValue;
+					}
+				};
+			})();
+		</script>
+		<link rel="icon" href="https://s.brightspace.com/lib/branding/1.0.0/brightspace/favicon.ico" sizes="any" />
+		<link rel="icon" href="https://s.brightspace.com/lib/branding/1.0.0/brightspace/favicon.svg" type="image/svg+xml" />
+		<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/bsi/2024.6.211/bsi.css" />
+		<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/reset-css/1.1.0/reset.css" />
+		<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.24.6.19120/web-packages/D2L.LP.Web.Desktop.css" />
+		<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.24.6.19120/web-packages/D2L.LE.Content.Web.Desktop.css" />
+		<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/apps/brightspace/20.24.6.19120/web-packages/D2L.LE.ToolIntegration.Content.css" />
+		<style>
+			html { font-size:20px; }
+			html { --d2l-branding-primary-color: #008099; }
+			.d2l-branding-navigation-background-color {background-color: #FFFFFF;}
+			.d2l_1_11_344 {margin:10px;}
+			.d2l_1_37_516 {width:500px;}
+			.d2l_1_38_746 {background-position:left top;}
+			.d2l_1_39_287 {padding:1em;}
+			.d2l_1_40_855 {background-image:url('https://s.brightspace.com/lib/bsi/2024.6.211/images/tier1/alert.svg');}
+			.d2l_1_41_503 {background-position:right top;}
+			.d2l_1_42_682 {padding-right:31px;}
+			.d2l_1_43_404 {min-height:18px;}
+			.d2l_1_44_129 {background-image:url('https://s.brightspace.com/lib/bsi/2024.6.211/images/tier1/check.svg');}
+			.d2l_1_45_942 {padding:3.4em;}
+			.d2l_1_46_497 {table-layout: Inherit;}
+			.d2l_1_47_355 {vertical-align:baseline;}
+			.d2l_1_48_820 {width:100%;}
+			.d2l_1_49_321 {margin-top:0.5em;margin-bottom:10px;}
+			@media (max-width: 1000px) {.d2l_1_50_239 {display:none}}
+			.d2l_1_51_828 {table-layout: Fixed;}
+			.d2l_1_57_148 {margin:0 5px;}
+			.d2l_1_61_635 {margin-left:10px;}
+			.d2l_1_62_16 {margin-bottom:10px;}
+			.d2l_1_64_274 {height:580px;}
+			.d2l_1_65_913 {padding:20px 0 0 0;}
+			.d2l_1_66_678 {float:left;}
+			.d2l_1_67_593:before {content:url('https://s.brightspace.com/lib/bsi/2024.6.211/images/tier1/download.svg');}
+			.d2l_1_68_796:before {content:url('https://s.brightspace.com/lib/bsi/2024.6.211/images/tier1/print.svg');}
+			.d2l_1_69_343 {float:right;}
+			.d2l_1_70_66 {padding:20px 0;}
+			.d2l_1_73_864 {padding:10px;}
+			.d2l_1_74_186 {border-right:1px solid #DDD;border-bottom:1px solid #DDD;border-left:1px solid #DDD;}
+			.d2l_1_75_81 {padding:0 0 10px 0;}
+			.d2l_1_76_56 {background-image:url('https://s.brightspace.com/lib/bsi/2024.6.211/images/tier2/dot.svg');}
+			.d2l_1_77_428 {padding-left:37px;}
+			.d2l_1_78_123 {min-height:24px;}
+		</style>
+		<script>(function() {})();</script></head>
+	<body class="d2l-body d2l-typography vui-typography daylight d2l-body-unresolved">
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQPCNTLF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><header><nav class="d2l-navigation-s d2l-branding-navigation-dark-foreground-color d2l-navigation-s-linkarea-no-color"><d2l-navigation has-skip-nav><d2l-navigation-main-header><div class="d2l-navigation-header-left" slot="left"><div class="d2l-navigation-s-header-open-button-wrapper"><d2l-navigation-button-icon icon="tier3:menu-hamburger" text="Menu" text-hidden tooltip-offset="0"></d2l-navigation-button-icon></div><div class="d2l-navigation-s-header-logo-area"><d2l-navigation-link-icon class="d2l-navigation-s-home-icon" text="My Home" href="/d2l/lp/ouHome/defaultHome.d2l" text-hidden icon="tier1:home" tooltip-offset="0"></d2l-navigation-link-icon><d2l-navigation-separator class="d2l-navigation-s-logo-divider"></d2l-navigation-separator><d2l-navigation-link-image class="d2l-navigation-s-logo" src="/d2l/lp/navbars/6605/theme/viewimage/48293700/view?v=20.24.6.19120" text="" slim tooltip-offset="0"></d2l-navigation-link-image><d2l-navigation-separator class="d2l-navigation-s-title-divider"></d2l-navigation-separator><div class="d2l-navigation-s-title-container"><a class="d2l-navigation-s-link" href="/d2l/home/532440" title="CIS-133Y-31539 - Python Programming I">CIS-133Y-31539 - Python Programming I</a></div></div></div><div class="d2l-navigation-header-right" slot="right"><div class="d2l-navigation-s-course-menu"><d2l-navigation-dropdown-button-icon icon="tier3:classes" text="Select a course..." no-auto-open tooltip-offset="0" data-prl="/d2l/lp/courseSelector/532440/InitPartial" data-prid="d2l_1_7_257"><d2l-dropdown-content max-width="800" min-width="450" no-padding vertical-offset="0"><div id="d2l_1_7_257" class="d2l-placeholder d2l-placeholder-live">
+		</div>
+		</d2l-dropdown-content></d2l-navigation-dropdown-button-icon></div><d2l-navigation-separator class="d2l-navigation-s-course-menu-divider"></d2l-navigation-separator><div class="d2l-navigation-s-notifications"><div class="d2l-navigation-s-notifications-wrapper"><div class="d2l-navigation-s-notification" data-category="messages" data-aria-message="You have new Messages"><d2l-navigation-dropdown-button-icon icon="tier3:email" text="Message alerts" no-auto-open tooltip-offset="0" data-prl="/d2l/NavigationArea/532440/ActivityFeed/GetAlertsDaylight?Category=2" data-prid="d2l_1_8_594"><d2l-dropdown-content max-width="500" no-padding vertical-offset="0"><div id="d2l_1_8_594" class="d2l-placeholder d2l-placeholder-live">
+		</div>
+		</d2l-dropdown-content></d2l-navigation-dropdown-button-icon></div><div class="d2l-navigation-s-notification" data-category="alerts" data-aria-message="You have new Subscriptions"><d2l-navigation-dropdown-button-icon icon="tier3:discussions" text="Subscription alerts" no-auto-open tooltip-offset="0" data-prl="/d2l/NavigationArea/532440/ActivityFeed/GetAlertsDaylight?Category=0" data-prid="d2l_1_9_409"><d2l-dropdown-content no-padding vertical-offset="0"><div id="d2l_1_9_409" class="d2l-placeholder d2l-placeholder-live">
+		</div>
+		</d2l-dropdown-content></d2l-navigation-dropdown-button-icon></div><div class="d2l-navigation-s-notification" data-category="grades" data-aria-message="You have new Updates"><d2l-navigation-dropdown-button-icon icon="tier3:notification-bell" text="Update alerts" no-auto-open tooltip-offset="0" data-prl="/d2l/NavigationArea/532440/ActivityFeed/GetAlertsDaylight?Category=1" data-prid="d2l_1_10_350"><d2l-dropdown-content no-padding vertical-offset="0"><div id="d2l_1_10_350" class="d2l-placeholder d2l-placeholder-live">
+		</div>
+		</d2l-dropdown-content></d2l-navigation-dropdown-button-icon></div></div><div class="d2l-navigation-s-notifications-div"></div></div><d2l-navigation-separator class="d2l-navigation-s-notifications-divider"></d2l-navigation-separator><div class="d2l-navigation-s-personal-menu"><d2l-navigation-dropdown-button-custom><span class="d2l-navigation-s-personal-menu-wrapper" slot="opener"><d2l-profile-image-base class="d2l-token-receiver" data-token-receiver-scope="core:*:*" href="/d2l/api/lp/1.7/profile/pUspHCWElC/image?v=20.24.6.19120" first-name="Nathanael" last-name="Allen" color-id="411467" size="medium"></d2l-profile-image-base><span class="d2l-navigation-s-personal-menu-text">Nathanael Allen</span></span><d2l-dropdown-content min-width="300" no-padding vertical-offset="0"><ul class="d2l-personal-tools-list"><li><div class="d2l-personal-tools-category-item d2l-personal-tools-category-item-first"><span style="white-space:nowrap;"><a class="d2l-link" aria-label="" href="/d2l/lp/profile/profile_edit.d2l?ou=532440" onclick="D2L.O(&quot;__g1&quot;,0)();">Profile</a>
+		</span></div><li class="d2l-personal-tools-category-item"><span style="white-space:nowrap;"><a class="d2l-link" aria-label="" href="/d2l/Notifications/Settings?ou=532440" onclick="D2L.O(&quot;__g1&quot;,1)();">Notifications</a>
+		</span></li><li class="d2l-personal-tools-category-item d2l-personal-tools-category-item-last"><span style="white-space:nowrap;"><a class="d2l-link" aria-label="" href="/d2l/lp/preferences/preferences_main/preferences_main.d2l?ou=532440" onclick="D2L.O(&quot;__g1&quot;,2)();">Account Settings</a>
+		</span></li></li><li class="d2l-personal-tools-separated-item"><div class="d2l-personal-tools-category-item d2l-personal-tools-category-item-first d2l-personal-tools-category-item-last"><span style="white-space:nowrap;"><a class="d2l-link" aria-label="" href="/d2l/le/userprogress/411467/532440/Summary?searchString=&amp;sortField=SortLastName&amp;sortDirection=0">Progress</a>
+		</span></div></li><li class="d2l-personal-tools-separated-item"><span style="white-space:nowrap;"><a class="d2l-link d2l_1_11_344" aria-label="" id="LocaleLinkId" href="javascript:void(0);" onclick="D2L.O(&quot;__g1&quot;,3)();return false;">US English</a>
+		</span></li><li class="d2l-personal-tools-separated-item"><span style="white-space:nowrap;"><a class="d2l-link d2l_1_11_344" aria-label="" href="javascript:void(0);" onclick="D2L.O(&quot;__g1&quot;,4)();return false;">Log Out</a>
+		</span></li></ul></d2l-dropdown-content></d2l-navigation-dropdown-button-custom></div><div class="d2l-navigation-s-admin-menu"><div class="d2l-navigation-s-admin-menu-spacer"></div><d2l-navigation-dropdown-button-icon icon="tier3:gear" text="Admin Tools" no-auto-open tooltip-offset="0" data-prl="/d2l/lp/admintools/532440/dropdownpartial" data-prid="d2l_1_12_46"><d2l-dropdown-content max-width="960" min-width="200" no-padding vertical-offset="0"><div id="d2l_1_12_46" class="d2l-placeholder d2l-placeholder-live">
+		</div>
+		</d2l-dropdown-content></d2l-navigation-dropdown-button-icon></div></div></d2l-navigation-main-header><d2l-navigation-main-footer class="d2l-branding-navigation-background-color d2l-visible-on-ancestor-target"><div slot="main"><div class="d2l-navigation-s-main-wrapper" data-loading="1" data-unmeasured="1" role="list"><div class="d2l-navigation-s-item" role="listitem"><a href="/d2l/lp/navbars/532440/customlinks/external/380689" class="d2l-navigation-s-link">Home</a></div>
+		<div class="d2l-navigation-s-item" role="listitem"><a href="/d2l/le/content/532440/Home" class="d2l-navigation-s-link">Content</a></div>
+		<div class="d2l-navigation-s-item" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">Coursework</span><d2l-icon icon="tier1:chevron-down"></d2l-icon></span></button><d2l-dropdown-menu><d2l-menu label="Coursework" class="d2l-menu-mvc">
+			<d2l-menu-item-link text="Assignments" href="/d2l/lms/dropbox/dropbox.d2l?ou=532440" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Discussions" href="/d2l/le/532440/discussions/List" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Quizzes" href="/d2l/lms/quizzing/quizzing.d2l?ou=532440" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+		</d2l-menu>
+		</d2l-dropdown-menu></d2l-dropdown>
+		</div>
+		<div class="d2l-navigation-s-item" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">Course Info</span><d2l-icon icon="tier1:chevron-down"></d2l-icon></span></button><d2l-dropdown-menu><d2l-menu label="Course Info" class="d2l-menu-mvc">
+			<d2l-menu-item-link text="Announcements" href="/d2l/lms/news/main.d2l?ou=532440" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Classlist" href="/d2l/lms/classlist/classlist.d2l?ou=532440" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Class Progress" href="/d2l/le/userprogress/411467/532440/Summary?searchString=&amp;sortField=SortLastName&amp;sortDirection=0" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Groups" href="/d2l/lms/group/group_list.d2l?ou=532440" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+		</d2l-menu>
+		</d2l-dropdown-menu></d2l-dropdown>
+		</div>
+		<div class="d2l-navigation-s-item" role="listitem"><a href="/d2l/lms/grades/index.d2l?ou=532440" class="d2l-navigation-s-link">Grades</a></div>
+		<div class="d2l-navigation-s-item" role="listitem"><a href="/d2l/lms/links/view_links.d2l?ou=532440" class="d2l-navigation-s-link">Links</a></div>
+		<div class="d2l-navigation-s-item" role="listitem"><a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=532440&amp;type=lti&amp;rcode=PCCD-5550828&amp;srcou=6605&amp;launchFramed=1&amp;framedName=Zoom" class="d2l-navigation-s-link">Zoom</a></div>
+		<div class="d2l-navigation-s-item" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">Help</span><d2l-icon icon="tier1:chevron-down"></d2l-icon></span></button><d2l-dropdown-menu><d2l-menu label="Help" class="d2l-menu-mvc">
+			<d2l-menu-item text="Find help at PCC" class="d2l-navigation-s-menu-item-root" id="d2l_1_13_413"></d2l-menu-item>
+			<d2l-menu-item text="Accessibility" class="d2l-navigation-s-menu-item-root" id="d2l_1_14_462"></d2l-menu-item>
+			<d2l-menu-item text="D2L Quick Start Videos" class="d2l-navigation-s-menu-item-root" id="d2l_1_15_826"></d2l-menu-item>
+			<d2l-menu-item text="Online Tutoring" class="d2l-navigation-s-menu-item-root" id="d2l_1_16_815"></d2l-menu-item>
+			<d2l-menu-item text="Panther Tracks" class="d2l-navigation-s-menu-item-root" id="d2l_1_17_119"></d2l-menu-item>
+			<d2l-menu-item text="Send corrections or feedback" class="d2l-navigation-s-menu-item-root" id="d2l_1_18_152"></d2l-menu-item>
+			<d2l-menu-item text="Student Help Desk" class="d2l-navigation-s-menu-item-root" id="d2l_1_19_43"></d2l-menu-item>
+		</d2l-menu>
+		</d2l-dropdown-menu></d2l-dropdown>
+		</div>
+		<div class="d2l-navigation-s-item" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">Instructor Tools</span><d2l-icon icon="tier1:chevron-down"></d2l-icon></span></button><d2l-dropdown-menu><d2l-menu label="Instructor Tools" class="d2l-menu-mvc">
+			<d2l-menu-item text="Panorama" class="d2l-navigation-s-menu-item-root" id="d2l_1_20_585"></d2l-menu-item>
+		</d2l-menu>
+		</d2l-dropdown-menu></d2l-dropdown>
+		</div>
+		<div class="d2l-navigation-s-item d2l-navigation-s-more" role="listitem"><d2l-dropdown><button class="d2l-navigation-s-group d2l-dropdown-opener"><span class="d2l-navigation-s-group-wrapper"><span class="d2l-navigation-s-group-text">More</span><d2l-icon icon="tier1:chevron-down"></d2l-icon></span></button><d2l-dropdown-menu><d2l-menu label="More" class="d2l-menu-mvc">
+			<d2l-menu-item-link text="Home" href="/d2l/lp/navbars/532440/customlinks/external/380689" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Content" href="/d2l/le/content/532440/Home" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item text="Coursework" class="d2l-navigation-s-menu-item-root">
+				<d2l-menu class="d2l-menu-mvc d2l-navigation-s-menu-item-root">
+					<d2l-menu-item-link text="Assignments" href="/d2l/lms/dropbox/dropbox.d2l?ou=532440"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Discussions" href="/d2l/le/532440/discussions/List"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Quizzes" href="/d2l/lms/quizzing/quizzing.d2l?ou=532440"></d2l-menu-item-link>
+				</d2l-menu>
+			</d2l-menu-item>
+			<d2l-menu-item text="Course Info" class="d2l-navigation-s-menu-item-root">
+				<d2l-menu class="d2l-menu-mvc d2l-navigation-s-menu-item-root">
+					<d2l-menu-item-link text="Announcements" href="/d2l/lms/news/main.d2l?ou=532440"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Classlist" href="/d2l/lms/classlist/classlist.d2l?ou=532440"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Class Progress" href="/d2l/le/userprogress/411467/532440/Summary?searchString=&amp;sortField=SortLastName&amp;sortDirection=0"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Groups" href="/d2l/lms/group/group_list.d2l?ou=532440"></d2l-menu-item-link>
+				</d2l-menu>
+			</d2l-menu-item>
+			<d2l-menu-item-link text="Grades" href="/d2l/lms/grades/index.d2l?ou=532440" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Links" href="/d2l/lms/links/view_links.d2l?ou=532440" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Zoom" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=532440&amp;type=lti&amp;rcode=PCCD-5550828&amp;srcou=6605&amp;launchFramed=1&amp;framedName=Zoom" class="d2l-navigation-s-menu-item-root"></d2l-menu-item-link>
+			<d2l-menu-item text="Help" class="d2l-navigation-s-menu-item-root">
+				<d2l-menu class="d2l-menu-mvc d2l-navigation-s-menu-item-root">
+					<d2l-menu-item text="Find help at PCC" id="d2l_1_21_738"></d2l-menu-item>
+					<d2l-menu-item text="Accessibility" id="d2l_1_22_833"></d2l-menu-item>
+					<d2l-menu-item text="D2L Quick Start Videos" id="d2l_1_23_253"></d2l-menu-item>
+					<d2l-menu-item text="Online Tutoring" id="d2l_1_24_983"></d2l-menu-item>
+					<d2l-menu-item text="Panther Tracks" id="d2l_1_25_632"></d2l-menu-item>
+					<d2l-menu-item text="Send corrections or feedback" id="d2l_1_26_555"></d2l-menu-item>
+					<d2l-menu-item text="Student Help Desk" id="d2l_1_27_405"></d2l-menu-item>
+				</d2l-menu>
+			</d2l-menu-item>
+			<d2l-menu-item text="Instructor Tools" class="d2l-navigation-s-menu-item-root">
+				<d2l-menu class="d2l-menu-mvc d2l-navigation-s-menu-item-root">
+					<d2l-menu-item text="Panorama" id="d2l_1_28_240"></d2l-menu-item>
+				</d2l-menu>
+			</d2l-menu-item>
+		</d2l-menu>
+		</d2l-dropdown-menu></d2l-dropdown>
+		</div>
+		</div></div></d2l-navigation-main-footer><div class="d2l-navigation-s-mobile-menu" data-state="closed" data-cprl="/d2l/lp/courseSelector/532440/InitPartial"><div class="d2l-navigation-s-mobile-menu-mask"><div class="d2l-navigation-s-mobile-menu-focus-trap-start d2l-offscreen" tabindex="0">Menu Start</div><p class="d2l-navigation-s-mobile-menu-first d2l-offscreen" tabindex="-1">Menu Start</p><div class="d2l-navigation-s-mobile-menu-mask-close"><d2l-button-icon icon="tier1:close-large-thick" text="close"></d2l-button-icon>
+		</div></div><div class="d2l-navigation-s-mobile-menu-content"><d2l-navigation-band></d2l-navigation-band><div class="d2l-navigation-s-mobile-menu-header"><div class="d2l-navigation-s-mobile-menu-branded-header"><div class="d2l-navigation-s-header-logo-area"><d2l-navigation-link-icon class="d2l-navigation-s-home-icon" text="My Home" href="/d2l/lp/ouHome/defaultHome.d2l" text-hidden icon="tier1:home" tooltip-offset="0"></d2l-navigation-link-icon><d2l-navigation-separator class="d2l-navigation-s-logo-divider"></d2l-navigation-separator><d2l-navigation-link-image class="d2l-navigation-s-logo" src="/d2l/lp/navbars/6605/theme/viewimage/48293700/view?v=20.24.6.19120" text="" slim tooltip-offset="0"></d2l-navigation-link-image><d2l-navigation-separator class="d2l-navigation-s-title-divider"></d2l-navigation-separator><div class="d2l-navigation-s-title-container"><a class="d2l-navigation-s-link" href="/d2l/home/532440" title="CIS-133Y-31539 - Python Programming I">CIS-133Y-31539 - Python Programming I</a></div></div><div class="d2l-navigation-s-gutter"></div><div class="d2l-navigation-s-mobile-menu-course-selector"><d2l-navigation-button-icon icon="tier3:classes" text="Select a course..." text-hidden tooltip-offset="0"></d2l-navigation-button-icon></div></div><div class="d2l-navigation-s-mobile-menu-header-course-menu"><d2l-navigation-button-icon icon="tier1:chevron-left" text="CIS-133Y-31539 - Python Programming I" text-hidden tooltip-offset="0"></d2l-navigation-button-icon><div class="d2l-navigation-s-title-container"><span class="d2l-navigation-s-title">CIS-133Y-31539 - Python Programming I</span></div></div></div><div class="d2l-navigation-s-title-container d2l-navigation-s-mobile-menu-title-bp d2l-branding-navigation-background-color"><a class="d2l-navigation-s-link" href="/d2l/home/532440" title="CIS-133Y-31539 - Python Programming I">CIS-133Y-31539 - Python Programming I</a></div><div class="d2l-navigation-s-mobile-menu-course-menu"></div><div class="d2l-navigation-s-mobile-menu-nav"><d2l-menu label="Menu" class="d2l-menu-mvc">
+			<d2l-menu-item-link text="Home" href="/d2l/lp/navbars/532440/customlinks/external/380689"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Content" href="/d2l/le/content/532440/Home"></d2l-menu-item-link>
+			<d2l-menu-item text="Coursework">
+				<d2l-menu class="d2l-menu-mvc">
+					<d2l-menu-item-link text="Assignments" href="/d2l/lms/dropbox/dropbox.d2l?ou=532440"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Discussions" href="/d2l/le/532440/discussions/List"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Quizzes" href="/d2l/lms/quizzing/quizzing.d2l?ou=532440"></d2l-menu-item-link>
+				</d2l-menu>
+			</d2l-menu-item>
+			<d2l-menu-item text="Course Info">
+				<d2l-menu class="d2l-menu-mvc">
+					<d2l-menu-item-link text="Announcements" href="/d2l/lms/news/main.d2l?ou=532440"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Classlist" href="/d2l/lms/classlist/classlist.d2l?ou=532440"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Class Progress" href="/d2l/le/userprogress/411467/532440/Summary?searchString=&amp;sortField=SortLastName&amp;sortDirection=0"></d2l-menu-item-link>
+					<d2l-menu-item-link text="Groups" href="/d2l/lms/group/group_list.d2l?ou=532440"></d2l-menu-item-link>
+				</d2l-menu>
+			</d2l-menu-item>
+			<d2l-menu-item-link text="Grades" href="/d2l/lms/grades/index.d2l?ou=532440"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Links" href="/d2l/lms/links/view_links.d2l?ou=532440"></d2l-menu-item-link>
+			<d2l-menu-item-link text="Zoom" href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=532440&amp;type=lti&amp;rcode=PCCD-5550828&amp;srcou=6605&amp;launchFramed=1&amp;framedName=Zoom"></d2l-menu-item-link>
+			<d2l-menu-item text="Help">
+				<d2l-menu class="d2l-menu-mvc">
+					<d2l-menu-item text="Find help at PCC" id="d2l_1_29_885"></d2l-menu-item>
+					<d2l-menu-item text="Accessibility" id="d2l_1_30_134"></d2l-menu-item>
+					<d2l-menu-item text="D2L Quick Start Videos" id="d2l_1_31_436"></d2l-menu-item>
+					<d2l-menu-item text="Online Tutoring" id="d2l_1_32_664"></d2l-menu-item>
+					<d2l-menu-item text="Panther Tracks" id="d2l_1_33_451"></d2l-menu-item>
+					<d2l-menu-item text="Send corrections or feedback" id="d2l_1_34_615"></d2l-menu-item>
+					<d2l-menu-item text="Student Help Desk" id="d2l_1_35_118"></d2l-menu-item>
+				</d2l-menu>
+			</d2l-menu-item>
+			<d2l-menu-item text="Instructor Tools">
+				<d2l-menu class="d2l-menu-mvc">
+					<d2l-menu-item text="Panorama" id="d2l_1_36_759"></d2l-menu-item>
+				</d2l-menu>
+			</d2l-menu-item>
+			<d2l-menu-item-separator></d2l-menu-item-separator>
+			<d2l-menu-item text="Admin Tools">
+				<d2l-menu class="d2l-menu-mvc">
+					<d2l-menu-item text="Organization Related">
+						<d2l-menu class="d2l-menu-mvc">
+							<d2l-menu-item-link text="Media Library" href="/d2l/wcs/media-library/?ou=532440"></d2l-menu-item-link>
+						</d2l-menu>
+					</d2l-menu-item>
+				</d2l-menu>
+			</d2l-menu-item>
+		</d2l-menu>
+		</div></div><div class="d2l-navigation-s-mobile-menu-focus-trap-end d2l-offscreen" tabindex="0">Menu End</div></div></d2l-navigation></nav></header><div class="d2l-page-message-container"><div class="d2l-page-message d2l-hidden d2l_1_37_516" id="d2l_sessionExpiryWarning"><div style="display:none;" id="d2l_sessionExpiryAlert" role="alert"><div class="d2l-container-icon d2l_1_38_746 d2l_1_39_287">
+			<div class="d2l-container-icon-inner d2l_1_40_855 d2l_1_41_503 d2l_1_42_682 d2l_1_43_404">
+				<h2 class="d2l-heading vui-heading-2">Are You Still There?</h2>
+				<div class="d2l-textblock">Your session expires after 180 minutes of inactivity, which protects your information in case you&#39;ve left your device without logging out.<br/>
+<br/>
+<strong>Hit a key or click anywhere to stay logged in.</strong></div>
+			</div>
+		</div>
+		</div><div style="display:none;" id="d2l_sessionExpiryCheck" role="alert"><div class="d2l-container-icon d2l_1_38_746 d2l_1_39_287">
+			<div class="d2l-container-icon-inner d2l_1_44_129 d2l_1_41_503 d2l_1_42_682 d2l_1_43_404">
+				<div class="d2l_1_45_942">
+					<h2 class="d2l-heading vui-heading-2 d2l-heading-none">Oh, There You Are!</h2>
+				</div>
+			</div>
+		</div>
+		</div></div>
+		</div>
+		<div class="d2l-page-main d2l-min-width d2l-max-width">
+			<div class="d2l-page-collapsepane-container"><div class="d2l-page-collapsepane-shadow"><div></div></div><div class="d2l-page-collapsepane" data-openfirst="D2L.O(&quot;__g1&quot;,5)();"><div class="d2l-page-collapsepane-handle"><h2 class="d2l-heading vui-offscreen">Side Panel</h2>
+			<a class="d2l-page-collapsepane-handle-link"><span class="d2l-page-collapsepane-handle-expand d2l-offscreen">Expand side panel</span><span class="d2l-page-collapsepane-handle-collapse d2l-offscreen">Collapse side panel</span></a></div><div class="d2l-page-collapsepane-content"><div class="d2l-page-collapsepane-content-inner d2l-scrollbar"><div class="d2l-page-collapsepane-content-padding"><div id="ContentNavigator" class="d2l-placeholder d2l-placeholder-live">
+				<div class="d2l-loading"><d2l-loading-spinner size="120"></d2l-loading-spinner><div class="d2l-textblock d2l-offscreen">Loading...</div>
+				</div>
+			</div>
+			</div></div></div><div class="d2l-page-collapsepane-end"></div></div></div><div class="d2l-page-main-padding">
+				<div class="d2l-page-header d2l-header-responsive-collapse-layout">
+					<div class="d2l-box-layout d2l_1_46_497">
+						<div class="d2l-box d2l-box-v d2l-header-top d2l_1_47_355">
+							<div class="d2l-box-layout d2l_1_46_497">
+								<div class="d2l-box d2l-box-h d2l_1_48_820 d2l_1_47_355">
+									<d2l-breadcrumbs class="d2l_1_49_321 d2l_1_50_239">
+										<d2l-breadcrumb text="Table of Contents" href="javascript:void(0);" onclick="D2L.O(&quot;__g1&quot;,6)();return false;"></d2l-breadcrumb>
+										<d2l-breadcrumb text="Module 6: Object-Oriented Programming" href="/d2l/le/content/532440/Home?itemIdentifier=D2L.LE.Content.ContentObject.ModuleCO-11632788"></d2l-breadcrumb>
+										<d2l-breadcrumb-current-page text="Lab 6 Assignment Instructions" class="d2l-page-breadcrumb-title"></d2l-breadcrumb-current-page>
+									</d2l-breadcrumbs>
+								</div>
+							</div>
+						</div>
+						<div class="d2l-box d2l-box-v d2l-header-bottom-box-responsive d2l_1_47_355">
+							<div class="d2l-box-layout d2l_1_46_497">
+								<div class="d2l-box d2l-box-h d2l_1_48_820 d2l_1_47_355">
+									<div class="d2l-page-title-c"><div class="d2l-box-layout d2l_1_51_828">
+										<div class="d2l-box d2l-box-h d2l_1_48_820 d2l_1_47_355">
+											<h1 class="d2l-page-title d2l-heading bsi-set-solid vui-heading-1">Lab 6 Assignment Instructions</h1>
+											<div id="d2l_1_52_832" class="d2l-floating-container d2l-hidden ">
+												<template id="d2l_pageTitleActions" class="d2l-contextmenu-template" data-floating-container-id="d2l_1_52_832" data-dropdown-content-id="d2l_1_53_428">
+												<d2l-menu class="d2l-menu-mvc d2l-contextmenu">
+													<d2l-menu-item text="Download" id="d2l_1_54_864"></d2l-menu-item>
+													<d2l-menu-item text="View Metadata" id="d2l_1_55_382"></d2l-menu-item>
+												</d2l-menu>
+												</template>
+											</div><d2l-dropdown-context-menu no-auto-open text="Actions for &#39;Lab 6 Assignment Instructions&#39;" id="d2l_1_0_121" class="d2l-contextmenu-ph d2l-contextmenu-ph-dropdown" data-contextMenuId="d2l_pageTitleActions" data-placeholderKey="d2l_1_56_389"></d2l-dropdown-context-menu>
+											<div class="d2l-clear"></div>
+											<div class="d2l-page-title-view"><h2 class="d2l-heading vui-offscreen">Web Page</h2>
+											</div></div>
+									</div>
+									</div></div>
+								<div class="d2l-box d2l-box-h d2l_1_47_355">
+									<div class="d2l-page-header-side">
+										<div class="d2l_1_57_148 d2l-inline">
+											<span id="d2l_1_58_97" data-active-id="d2l_1_59_800" data-inactive-id="d2l_1_60_319"><d2l-button-icon icon="tier1:bookmark-hollow" id="d2l_1_59_800" onclick="D2L.O(&quot;__g1&quot;,7)();" text="Add Bookmark"></d2l-button-icon>
+											<d2l-button-icon icon="tier1:bookmark-filled" class="d2l-hidden" id="d2l_1_60_319" onclick="D2L.O(&quot;__g1&quot;,8)();" text="Remove Bookmark"></d2l-button-icon>
+											</span></div>
+										<d2l-button-icon icon="tier1:fullscreen" onclick="D2L.O(&quot;__g1&quot;,9)();" text="View content in new window"></d2l-button-icon>
+										<div class="d2l_1_61_635 d2l-inline">
+											<div class="d2l-iterator">
+												<a class="d2l-iterator-button d2l-iterator-button-prev d2l-iterator-button-notext" role="button" href="/d2l/le/content/532440/navigateContent/19223/Previous?pId=11632788" title="Previous "><d2l-icon icon="tier1:chevron-left"></d2l-icon><span class="d2l-offscreen">Previous </span>&nbsp;</a><a class="d2l-iterator-button d2l-iterator-button-next d2l-iterator-button-notext" role="button" href="/d2l/le/content/532440/navigateContent/19223/Next?pId=11632788" title="Next"><span class="d2l-offscreen">Next</span>&nbsp;<d2l-icon icon="tier1:chevron-right"></d2l-icon></a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="d2l-messagearea d2l_1_62_16" id="d2l_messagearea"></div><div id="ContentView" class="d2l-placeholder d2l-placeholder-live">
+					<div id="d2l_le_content_printcontainer">
+						<div class="d2l-fileviewer"><div class="d2l-fileviewer-text" data-location="/content/enforced/532440-31539.202403.CIS133Y/module-06/Lab%206%20Assignment%20Instructions.html?ou=532440" data-title="Lab 6 Assignment Instructions.html" data-isprintable="True"><div class="d2l-iframe-loading-container d2l_1_48_820 d2l_1_64_274">
+							</div>
+							<iframe class="d2l-iframe d2l-iframe-offscreen d2l-iframe-fit-user-content d2l-iframe-context-provider-allowed d2l_1_48_820 d2l_1_64_274" id="d2l_1_63_707" name="d2l_1_63_707" src="/content/enforced/532440-31539.202403.CIS133Y/module-06/Lab%206%20Assignment%20Instructions.html?ou=532440&amp;d2l_body_type=3" title="Lab 6 Assignment Instructions.html" frameborder="0" scrolling="auto" allowfullscreen="" allow="microphone *; camera *" onload="this.m_loaded=true;" data-default-height="580" data-inner-document-title="Lab 6 Assignment Instructions" content-resize-iframe-height="true"></iframe>
+							</div></div>
+					</div>
+				</div>
+				<div class="d2l_1_65_913">
+					<div class="d2l_1_66_678">
+						<button type="button" class="d2l-button" id="d2l_content_532440_11632936" data-onclick="D2L.O(&quot;__g1&quot;,10)();"><span class="d2l-icon-custom d2l_1_67_593"></span>Download</button><button type="button" class="d2l-button" id="d2l_1_2_402" data-onclick="D2L.O(&quot;__g1&quot;,11)();"><span class="d2l-icon-custom d2l_1_68_796"></span>Print</button></div>
+					<div class="d2l_1_69_343">
+						<div class="d2l_1_61_635 d2l-inline">
+							<div class="d2l-iterator">
+								<a class="d2l-iterator-button d2l-iterator-button-prev d2l-iterator-button-notext" role="button" href="/d2l/le/content/532440/navigateContent/19223/Previous?pId=11632788" title="Previous "><d2l-icon icon="tier1:chevron-left"></d2l-icon><span class="d2l-offscreen">Previous </span>&nbsp;</a><a class="d2l-iterator-button d2l-iterator-button-next d2l-iterator-button-notext" role="button" href="/d2l/le/content/532440/navigateContent/19223/Next?pId=11632788" title="Next"><span class="d2l-offscreen">Next</span>&nbsp;<d2l-icon icon="tier1:chevron-right"></d2l-icon></a></div>
+						</div>
+					</div>
+					<div class="d2l-clear"></div>
+				</div>
+				<div class="d2l_1_70_66">
+					<div id="AdditionalInfoPlaceholder" class="d2l-placeholder d2l-placeholder-live">
+						<ul class="vui-tabmenu" role="tablist" id="d2l_1_71_298">
+							<li class="vui-tabmenu-item vui-tabmenu-item-select" role="presentation">
+								<a id="d2l_1_72_371" href="javascript:void(0);" role="tab" aria-selected="true" tabindex="0" onclick="D2L.O(&quot;__g1&quot;,12)();">
+									Activity Details<span class="vui-tabmenu-item-blue">
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="d2l_1_73_864 d2l_1_74_186">
+						<div id="ActivityDetailsTabId">
+							<div class="d2l-box-layout d2l_1_46_497">
+								<div class="d2l-box d2l-box-h d2l_1_48_820 d2l_1_47_355">
+									<div class="d2l_1_75_81">
+										<div class=" d2l-inline">
+											<div id="d2l_1_3_82" class="d2l-placeholder d2l-placeholder-live">
+												<form data-method="post" data-scope="" class="d2l-form d2l-form-primary" id="CompletionTaskForm" onsubmit="return false;">
+													<div class=" d2l-inline">
+														<div class="d2l-container-icon d2l_1_38_746 d2l_1_76_56 d2l_1_38_746 d2l_1_77_428 d2l_1_78_123">
+															<div class="d2l-textblock vui-emphasis">Task: View this topic</div>
+														</div>
+													</div>
+													<div class=" d2l-inline">
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class=" d2l-hidden" id="ResultsDetailsTabId">
+							<div id="ResultDetails" class="d2l-placeholder d2l-placeholder-inner d2l-placeholder-live">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="StatusPlaceholder" class="d2l-placeholder d2l-placeholder-live">
+					<div class="d2l-textblock d2l-textblock-secondary vui-emphasis"></div>
+				</div>
+			</div>
+		</div>
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-18957515-1"></script>
+		<script>
+		
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push( arguments ); }
+gtag('js', new Date());
+gtag('config', 'UA-18957515-1');
+		</script>
+		<script src="https://s.brightspace.com/lib/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://s.brightspace.com/lib/jqueryui/1.13.2/jquery-ui.min.js"></script>
+		<script src="https://s.brightspace.com/lib/bsi/2024.6.211/bsi.js"></script>
+		<script>
+		window.__elasticRumOnload = function() {var apm = elasticApm.init({serviceName: 'LMS',serverUrl: 'https://d2l-elasticrum.apm.us-east-1.aws.cloud.es.io/',transactionSampleRate: 0.1,disableInstrumentations: ['xmlhttprequest','fetch','eventtarget','history']});apm.addLabels({ "orgName": "pccd"});apm.addLabels({ "instanceName": "pccd"});};
+		</script>
+		<script async="async" onload="window.__elasticRumOnload()" src="https://s.brightspace.com/lib/elastic-apm-rum/5.5.0/elastic-apm-rum.umd.min.js"></script>
+		<script>
+		window.__ttiOnload = function() {ttiPolyfill.getFirstConsistentlyInteractive().then(function(tti) {if (tti) {document.dispatchEvent(new CustomEvent('d2l-performance-measure', {bubbles: true,detail: { name: 'd2l.page.tti', value: {name: 'd2l.page.tti', entryType: 'tti-polyfill', duration: tti, startTime: 0} }}));}});};
+		</script>
+		<script async="async" onload="window.__ttiOnload()" src="https://s.brightspace.com/lib/tti-polyfill/0.2.2/tti-polyfill-global.js"></script>
+		<script src="https://s.brightspace.com/apps/brightspace/20.24.6.19120/web-packages/D2L.LE.Content.ContentViewer.js"></script>
+		<script src="https://s.brightspace.com/apps/brightspace/20.24.6.19120/web-packages/D2L.LP.Web.Desktop.js"></script>
+		<script src="https://s.brightspace.com/apps/brightspace/20.24.6.19120/web-packages/D2L.LE.Content.Web.Desktop.js"></script>
+		<script src="https://s.brightspace.com/apps/brightspace/20.24.6.19120/web-packages/D2L.LE.ToolIntegration.Content.js"></script>
+		<script src="/d2l/custom/JavaScriptManagement/Files/532440/1.js?v=20.24.6.19120"></script>
+		<script src="/d2l/common/assets/tock/tock.min.js?v=20.24.6.19120"></script>
+		<script src="/d2l/common/assets/ifvisiblejs/ifvisible.min.js?v=20.24.6.19120"></script>
+		<script src="/d2l/lms/content/static/scripts/d2l-nav-host-base.js?v=20.24.6.19120"></script>
+		<script src="/d2l/lms/content/static/scripts/d2l-nav-docked-host.js?v=20.24.6.19120"></script>
+		<script>
+		D2L.LP.Web.UI.Events.OnInit.AddListener( function() {
+D2L.O("__g1",13)();
+D2L.O("__g1",14)();
+D2L.O("__g1",15)();
+D2L.O("__g1",16)();
+D2L.O("__g1",17)();
+D2L.O("__g1",18)();
+D2L.O("__g1",19)();
+D2L.O("__g1",20)();
+} );
+
+		D2L.LP.Web.UI.Events.OnLoad.AddListener( function() {
+D2L.O("__g1",21)();
+D2L.O("__g1",22)();
+D2L.O("__g1",23)();
+} );
+
+		D2L.OR={
+"d2l_1_7_257":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_8_594":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_9_409":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_10_350":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"__g1":{"0":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.UXP.Profile.411467\"]}",
+"1":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.LP.Notification.Settings.532440\"]}",
+"2":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.UXP.Preferences.532440\"]}",
+"3":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.Mvc.RouteLocation.Create\",\"P\":[\"\/d2l\/lp\/personalTools\/{orgUnitId}\/dropdownpartial\/updateLanguage\",{\"_type\":\"D2L.LP.Util.Dictionary\",\"newLocaleId\":{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"LocaleLinkId\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/personalTools\/532440\/dropdownpartial\/language?currentLocaleId=0\"}],\"D\":true}},{\"_type\":\"D2L.LP.Util.Dictionary\",\"action\":\"LanguageDialog\"}]}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.ReloadPage\"}]}",
+"4":"{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.Logout\",\"P\":[\"\/d2l\/logout\"]}",
+"5":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialRender\",\"P\":[{\"_type\":\"id\",\"Value\":\"ContentNavigator\"},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectPartial\",\"P\":[{\"_type\":\"id\",\"Value\":\"ContentNavigator\"},\"GET\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/532440\/viewobject\/11632936\/PartialNavigator?mId=11632788\"},{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Web.UI.Rpc.RpcOptions\",\"keepAlive\":true,\"includeXsrfHeader\":false}],\"D\":true},0,false,null],\"D\":true}",
+"6":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/532440\/Home?itemIdentifier=TOC\"}]}]}",
+"7":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Toggle.ToggleFunction\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_58_97\"}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Toggle.Focus\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_58_97\"}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/532440\/viewContent\/11632936\/ToggleBookmark?bookmarkStatus=1\"}],\"D\":true}]}",
+"8":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Toggle.ToggleFunction\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_58_97\"}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Toggle.Focus\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_58_97\"}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Connect\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/532440\/viewContent\/11632936\/ToggleBookmark?bookmarkStatus=0\"}],\"D\":true}]}",
+"9":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"Lab 6 Assignment Instructions\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/532440\/fullscreen\/11632936\/View\"},1280,800,false,false,null,false]}",
+"10":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Button.SetIsEnabled\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_content_532440_11632936\"},false]},{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"CheckTopicFileJSVariable\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectObject\",\"P\":[\"GET\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/532440\/topics\/files\/download\/11632936\/CheckFileTopicInfo\"}],\"D\":true}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.ObjectAccessor\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"CheckTopicFileJSVariable\"]},\"IsBroken\"]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.InlineDialog\",\"P\":[null,null,\"Error\",\"Unable to download. The file associated with this content topic cannot be found.\",\"\",\"OK\",\"\",\"Close this Dialog\",\"\",true,false,false,true,false],\"D\":true},true,{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.ObjectAccessor\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"CheckTopicFileJSVariable\"]},\"IsPackageable\"]},{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"DownloadProgressDialogResultJSVariable\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_0_121\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/532440\/11632936\/startdownload\/InitiateTopicDownload?openerId=d2l_1_0_121\"}],\"D\":true}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.CompareNumber\",\"P\":[5,{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"DownloadProgressDialogResultJSVariable\"]},0]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.Mvc.RouteLocation.Create\",\"P\":[\"\/d2l\/le\/content\/{orgUnitId}\/downloads\/{downloadType}\/{jobId}\/{action}\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"action\":\"Download\",\"orgUnitId\":532440,\"downloadType\":\"Topic\",\"jobId\":{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"DownloadProgressDialogResultJSVariable\"]}}]}]},true,null],\"D\":true}]},true,{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/532440\/topics\/files\/download\/11632936\/DirectFileTopicDownload\"}]}],\"D\":true}],\"D\":true}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.SetTimeoutWithEvent\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.Button.SetIsEnabled\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_content_532440_11632936\"},true]},3000]}]}",
+"11":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.FileViewer.TryPrint\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_le_content_printcontainer\"}]}",
+"12":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"ActivityDetailsTabId\"},true]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"EvaluationSummaryTabId\"},false]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"ResultsDetailsTabId\"},false]}]}",
+"13":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.FloatingContainer.Init\"}",
+"14":"{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.Init\",\"P\":[\"411467\",180,5,{\"_type\":\"id\",\"Value\":\"d2l_sessionExpiryWarning\"},\"d2l_sessionExpiryAlert\",\"d2l_sessionExpiryCheck\",{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectObject\",\"P\":[\"POST\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/extend\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.OpenHelper\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.Dom.GetActiveElement\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/Expired?isLogout=0&isUsernamePasswordLogin=0&userId=411467\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.OpenHelper\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.Dom.GetActiveElement\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/auth\/session\/Expired?isLogout=1&isUsernamePasswordLogin=0&userId=411467\"}],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.InlineDialog\",\"P\":[null,{\"_type\":\"id\",\"Value\":\"d2l_1_79_40\"},\"New User Session\",\"\",\"The current user session has changed, so the links and content on this page may not behave as expected.\",\"OK\",\"\",\"Close this Dialog\",\"\",true,false,false,true,false],\"D\":true},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Inline.Abort\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_79_40\"}]}]}",
+"15":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.Authentication.Xsrf.Init\",\"P\":[\"d2l_referrer\",\"aq47VRUP5wkvwCAdwFWhXYFzWMD8jzRr\",1543730232]}",
+"16":"{\"_type\":\"func\",\"N\":\"D2L.LP.ActivityBar.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/activityFeed\/checkForNewAlerts\"},120]}",
+"17":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.Init\",\"P\":[\"d2l_messagearea\",{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/validation\/errors\"}]}",
+"18":"{\"_type\":\"func\",\"N\":\"D2L.LP.Globalization.Locale.Init\",\"P\":[{\"_type\":\"anon\",\"DecimalSeparator\":\".\",\"GroupSeparator\":\",\",\"NumberNegativePattern\":1,\"PercentPositivePattern\":0,\"PercentNegativePattern\":0,\"PercentSymbol\":\"%\",\"NegativeSign\":\"-\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"GroupSizes\":[0],\"IntegerRegex\":\"^([\\\\(-]*(([01234567890123456789]+))[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]+[\\\\)-]*)$\",\"DecimalRegex\":\"^([\\\\(-]*(([01234567890123456789]+))(\\\\.[01234567890123456789]+)?[\\\\)-]*)$|^([\\\\(-]*[01234567890123456789]*\\\\.?[01234567890123456789]+[\\\\)-]*)$\"},{\"_type\":\"anon\",\"InputDateFormat\":\"M\/d\/yyyy\",\"Is24HourClock\":false,\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"UseNativeDigits\":false,\"TimeFormat\":\"h:mm tt\",\"AmDesignator\":\"AM\",\"PmDesignator\":\"PM\",\"FirstDayOfWeek\":0,\"ShortMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"LongMonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"ShortDayOfWeekNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"]},{\"_type\":\"anon\",\"TextDirection\":1},{\"_type\":\"anon\",\"Culture\":\"en-us\"},{\"_type\":\"anon\",\"JustNow\":\"just now\",\"OneMinuteAgo\":\"1 minute ago\",\"TwoMinutesAgo\":\"2 minutes ago\",\"MinutesAgoMany\":\"[0] minutes ago\",\"OneHourAgo\":\"1 hour ago\",\"TwoHoursAgo\":\"2 hours ago\",\"ManyHoursAgo\":\"[0] hours ago\",\"YesterdayTime\":\"yesterday at [0]\",\"DayOfWeekTime\":\"[0] at [1]\",\"MonthDayTime\":\"[0] at [1]\",\"Now\":{\"_type\":\"D2L.LocalDateTime\",\"Year\":2024,\"Month\":7,\"Day\":18,\"Hour\":18,\"Minute\":9,\"Second\":35,\"Millisecond\":136}}]}",
+"19":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.Initialize\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/login?target=%2fd2l%2fle%2fcontent%2f532440%2fviewContent%2f11632936%2fView&sessionExpired=1\"},\"Error: unable to complete your request.\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"flash\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.FlashMessages.RpcReceivePayloadProvider\"},\"session\":{\"_type\":\"func\",\"N\":\"D2L.PT.Auth.SessionTimeout.RpcReceivePayloadProvider\"},\"messageArea\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.MessageArea.RpcReceivePayloadProvider\"},\"OR\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.ObjectRepository.RpcReceivePayloadProvider\"},\"JS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveJsPayloadProvider\"},\"CSS\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.RpcReceiveCssPayloadProvider\"},\"BSI\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Bsi.RpcReceiveJsPayloadProvider\"},\"ariaMessages\":{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Aria.RpcReceivePayloadProvider\"}}]}",
+"20":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.InlineHelp.Init\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/inlineHelp\/532440\/help\"}]}",
+"21":"{\"_type\":\"func\",\"N\":\"D2L.LE.ViewContent.ContentViewer.OnLoad\",\"P\":[532440,11632936,null,{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/532440\/viewContent\/11632936\/4c2b0054-8755-4e54-943e-f2961d30dad1\/TrackViewing\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/532440\/viewContent\/11632936\/4c2b0054-8755-4e54-943e-f2961d30dad1\/FinalizeView\"},0]}",
+"22":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.SetIsDisplayed\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_2_402\"},{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.FileViewer.IsPrintable\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_le_content_printcontainer\"}]}]}]}",
+"23":"{\"_type\":\"func\",\"N\":\"D2L.LE.ToolIntegration.Content.CompletionStatusChanged.Actions.RegisterHandler\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialRender\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_3_82\"},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectPartial\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_3_82\"},\"GET\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/532440\/object\/11632936\/UpdateCompletion\"},{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Web.UI.Rpc.RpcOptions\",\"keepAlive\":true,\"includeXsrfHeader\":false}],\"D\":true},0,false,null],\"D\":true}]}"}
+,
+"d2l_1_12_46":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_13_413":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/online.pcc.edu\/shared\/dl_template_8\/student-resources\/Student_Support_Resources.html\",{\"_type\":\"url\",\"Url\":\"https:\/\/online.pcc.edu\/shared\/dl_template_8\/student-resources\/Student_Support_Resources.html\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_14_462":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/www.pcc.edu\/instructional-support\/accessibility\/\",{\"_type\":\"url\",\"Url\":\"https:\/\/www.pcc.edu\/instructional-support\/accessibility\/\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_15_826":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/online.pcc.edu\/shared\/dl_template_8\/student-resources\/What_is_D2L_Brightspace.html\",{\"_type\":\"url\",\"Url\":\"https:\/\/online.pcc.edu\/shared\/dl_template_8\/student-resources\/What_is_D2L_Brightspace.html\"},800,600,true,true,null,true]}"}
+,
+"d2l_1_16_815":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/www.pcc.edu\/tutoring\/\",{\"_type\":\"url\",\"Url\":\"https:\/\/www.pcc.edu\/tutoring\/\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_17_119":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/www.pcc.edu\/panther-tracks\/\",{\"_type\":\"url\",\"Url\":\"https:\/\/www.pcc.edu\/panther-tracks\/\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_18_152":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/portlandcc.az1.qualtrics.com\/SE\/?SID=SV_aWXOaHFOZmUQzIx&course=532440&title=CIS-133Y-31539+-+Python+Programming+I&username=nathanael.allen1\",{\"_type\":\"url\",\"Url\":\"https:\/\/portlandcc.az1.qualtrics.com\/SE\/?SID=SV_aWXOaHFOZmUQzIx&course=532440&title=CIS-133Y-31539+-+Python+Programming+I&username=nathanael.allen1\"},800,600,false,false,null,true]}"}
+,
+"d2l_1_19_43":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"http:\/\/www.pcc.edu\/shd\",{\"_type\":\"url\",\"Url\":\"http:\/\/www.pcc.edu\/shd\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_20_585":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"\/d2l\/common\/dialogs\/quickLink\/quickLink.d2l?ou=532440&type=lti&rcode=PCCD-6361434&srcou=6605\",{\"_type\":\"url\",\"Url\":\"\/d2l\/common\/dialogs\/quickLink\/quickLink.d2l?ou=532440&type=lti&rcode=PCCD-6361434&srcou=6605\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_21_738":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/online.pcc.edu\/shared\/dl_template_8\/student-resources\/Student_Support_Resources.html\",{\"_type\":\"url\",\"Url\":\"https:\/\/online.pcc.edu\/shared\/dl_template_8\/student-resources\/Student_Support_Resources.html\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_22_833":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/www.pcc.edu\/instructional-support\/accessibility\/\",{\"_type\":\"url\",\"Url\":\"https:\/\/www.pcc.edu\/instructional-support\/accessibility\/\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_23_253":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/online.pcc.edu\/shared\/dl_template_8\/student-resources\/What_is_D2L_Brightspace.html\",{\"_type\":\"url\",\"Url\":\"https:\/\/online.pcc.edu\/shared\/dl_template_8\/student-resources\/What_is_D2L_Brightspace.html\"},800,600,true,true,null,true]}"}
+,
+"d2l_1_24_983":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/www.pcc.edu\/tutoring\/\",{\"_type\":\"url\",\"Url\":\"https:\/\/www.pcc.edu\/tutoring\/\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_25_632":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/www.pcc.edu\/panther-tracks\/\",{\"_type\":\"url\",\"Url\":\"https:\/\/www.pcc.edu\/panther-tracks\/\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_26_555":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/portlandcc.az1.qualtrics.com\/SE\/?SID=SV_aWXOaHFOZmUQzIx&course=532440&title=CIS-133Y-31539+-+Python+Programming+I&username=nathanael.allen1\",{\"_type\":\"url\",\"Url\":\"https:\/\/portlandcc.az1.qualtrics.com\/SE\/?SID=SV_aWXOaHFOZmUQzIx&course=532440&title=CIS-133Y-31539+-+Python+Programming+I&username=nathanael.allen1\"},800,600,false,false,null,true]}"}
+,
+"d2l_1_27_405":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"http:\/\/www.pcc.edu\/shd\",{\"_type\":\"url\",\"Url\":\"http:\/\/www.pcc.edu\/shd\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_28_240":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"\/d2l\/common\/dialogs\/quickLink\/quickLink.d2l?ou=532440&type=lti&rcode=PCCD-6361434&srcou=6605\",{\"_type\":\"url\",\"Url\":\"\/d2l\/common\/dialogs\/quickLink\/quickLink.d2l?ou=532440&type=lti&rcode=PCCD-6361434&srcou=6605\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_29_885":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/online.pcc.edu\/shared\/dl_template_8\/student-resources\/Student_Support_Resources.html\",{\"_type\":\"url\",\"Url\":\"https:\/\/online.pcc.edu\/shared\/dl_template_8\/student-resources\/Student_Support_Resources.html\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_30_134":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/www.pcc.edu\/instructional-support\/accessibility\/\",{\"_type\":\"url\",\"Url\":\"https:\/\/www.pcc.edu\/instructional-support\/accessibility\/\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_31_436":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/online.pcc.edu\/shared\/dl_template_8\/student-resources\/What_is_D2L_Brightspace.html\",{\"_type\":\"url\",\"Url\":\"https:\/\/online.pcc.edu\/shared\/dl_template_8\/student-resources\/What_is_D2L_Brightspace.html\"},800,600,true,true,null,true]}"}
+,
+"d2l_1_32_664":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/www.pcc.edu\/tutoring\/\",{\"_type\":\"url\",\"Url\":\"https:\/\/www.pcc.edu\/tutoring\/\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_33_451":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/www.pcc.edu\/panther-tracks\/\",{\"_type\":\"url\",\"Url\":\"https:\/\/www.pcc.edu\/panther-tracks\/\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_34_615":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"https:\/\/portlandcc.az1.qualtrics.com\/SE\/?SID=SV_aWXOaHFOZmUQzIx&course=532440&title=CIS-133Y-31539+-+Python+Programming+I&username=nathanael.allen1\",{\"_type\":\"url\",\"Url\":\"https:\/\/portlandcc.az1.qualtrics.com\/SE\/?SID=SV_aWXOaHFOZmUQzIx&course=532440&title=CIS-133Y-31539+-+Python+Programming+I&username=nathanael.allen1\"},800,600,false,false,null,true]}"}
+,
+"d2l_1_35_118":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"http:\/\/www.pcc.edu\/shd\",{\"_type\":\"url\",\"Url\":\"http:\/\/www.pcc.edu\/shd\"},0,0,true,true,null,true]}"}
+,
+"d2l_1_36_759":{"select":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.OpenWindow\",\"P\":[\"\/d2l\/common\/dialogs\/quickLink\/quickLink.d2l?ou=532440&type=lti&rcode=PCCD-6361434&srcou=6605\",{\"_type\":\"url\",\"Url\":\"\/d2l\/common\/dialogs\/quickLink\/quickLink.d2l?ou=532440&type=lti&rcode=PCCD-6361434&srcou=6605\"},0,0,true,true,null,true]}"}
+,
+"ContentNavigator":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_54_864":{"select":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"CheckTopicFileJSVariable\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Rpc.ConnectObject\",\"P\":[\"GET\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/532440\/topics\/files\/download\/11632936\/CheckFileTopicInfo\"}],\"D\":true}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.ObjectAccessor\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"CheckTopicFileJSVariable\"]},\"IsBroken\"]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.InlineDialog\",\"P\":[null,null,\"Error\",\"Unable to download. The file associated with this content topic cannot be found.\",\"\",\"OK\",\"\",\"Close this Dialog\",\"\",true,false,false,true,false],\"D\":true},true,{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.ObjectAccessor\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"CheckTopicFileJSVariable\"]},\"IsPackageable\"]},{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.VS\",\"P\":[\"DownloadProgressDialogResultJSVariable\",{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Desktop.MasterPages.Dialog.Open\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_1_0_121\"},{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/532440\/11632936\/startdownload\/InitiateTopicDownload?openerId=d2l_1_0_121\"}],\"D\":true}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.If\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.UI.Html.JavaScript.CompareNumber\",\"P\":[5,{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"DownloadProgressDialogResultJSVariable\"]},0]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"call\",\"N\":\"D2L.LP.Web.Mvc.RouteLocation.Create\",\"P\":[\"\/d2l\/le\/content\/{orgUnitId}\/downloads\/{downloadType}\/{jobId}\/{action}\",{\"_type\":\"D2L.LP.Util.Dictionary\"},{\"_type\":\"D2L.LP.Util.Dictionary\",\"action\":\"Download\",\"orgUnitId\":532440,\"downloadType\":\"Topic\",\"jobId\":{\"_type\":\"call\",\"N\":\"D2L.VG\",\"P\":[\"DownloadProgressDialogResultJSVariable\"]}}]}]},true,null],\"D\":true}]},true,{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/532440\/topics\/files\/download\/11632936\/DirectFileTopicDownload\"}]}],\"D\":true}],\"D\":true}]}"}
+,
+"d2l_1_55_382":{"select":"{\"_type\":\"pipe\",\"P\":[{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.ReturnPoints.Set\",\"P\":[\"D2L.Core.Metadata.Web.Navigation.GetViewEditMetadataReturnPointKey\",{\"_type\":\"url\",\"Url\":\"\/d2l\/le\/content\/532440\/viewContent\/11632936\/View\"}]},{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Html.Dom.Navigate\",\"P\":[{\"_type\":\"url\",\"Url\":\"\/d2l\/lp\/metadata\/view.d2l?fp=mc&ou=532440&type=2&objectId=11632936\"}]}]}"}
+,
+"d2l_1_52_832":{"onClose":"{\"_type\":\"func\",\"N\":\"D2L.LP.Web.UI.Desktop.Controls.ContextMenu.OnCloseHandler\",\"P\":[{\"_type\":\"id\",\"Value\":\"d2l_pageTitleActions\"}]}"}
+,
+"ContentView":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"AdditionalInfoPlaceholder":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"d2l_1_3_82":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"ResultDetails":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+,
+"StatusPlaceholder":{"0":"{\"_type\":\"D2L.LP.Web.UI.Html.PartialRendering.PartialHtmlRenderContext\",\"HeadingLevel\":2,\"ValidClassNames\":[],\"Scope\":\"\"}"}
+
+};
+
+		</script>
+		<script>D2L.LP.Web.UI.Html.Bsi.Init('prod', true, 'https://s.brightspace.com/lib/webcomponentsjs/2.4.4/', 'https://s.brightspace.com/lib/regenerator-runtime/0.13.5/runtime.js', 'https://s.brightspace.com/lib/bsi/2024.6.211/', ['unbundled/d2l-navigation.js','unbundled/d2l-navigation-main-header.js','unbundled/d2l-navigation-button-icon.js','unbundled/d2l-navigation-link-icon.js','unbundled/d2l-navigation-separator.js','unbundled/d2l-navigation-link-image.js','unbundled/d2l-navigation-dropdown-button-icon.js','unbundled/dropdown-content.js','unbundled/d2l-navigation-dropdown-button-custom.js','unbundled/d2l-profile-image-base.js','unbundled/d2l-navigation-main-footer.js','unbundled/dropdown.js','unbundled/dropdown-menu.js','unbundled/icon.js','unbundled/menu.js','unbundled/menu-item-link.js','unbundled/menu-item.js','unbundled/d2l-navigation-band.js','unbundled/button-icon.js','unbundled/menu-item-separator.js','unbundled/loading-spinner.js','unbundled/breadcrumbs.js','unbundled/breadcrumb.js','unbundled/breadcrumb-current-page.js','unbundled/dropdown-context-menu.js']);</script>
+	</body>
+</html>
