@@ -2,6 +2,7 @@ from Name import Name
 
 def main():
     names = Name.showNames()
+    print(names)
     print('YEAR | NAME | GENDER | COUNT')
     print('-' * 30)
 

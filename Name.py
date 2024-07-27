@@ -1,11 +1,10 @@
 from Database import Database
 
 class Name:
-    def __init__(self, name, year, gender, count):
-        self.__name = name
-        self.__year = year
-        self.__gender = gender
-        self.__count = count
+    __name = ""
+    __year = int
+    __gender = ""
+    __count = int
     
 
     def setName(self, name):
@@ -43,7 +42,10 @@ class Name:
         names = Database().showNames()
         data = []
         for i in range(0, len(names)):
-            name = names[i]
-            data.append(Name(name["name"], name["year"], name["gender"], name["count"]))
+            newName = Name()
+            newName.setName(names[i]["name"])
+            newName.setYear(names[i]["year"])
+            newName.setGender(names[i]["gender"])
+            newName.setCount(names[i]["count"])
+            data.append(newName)
         return data
-
